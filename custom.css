@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carte{
+ height: 600px;
+ width: 400px;
+ border: 10px solid rgb(255, 234, 0);
+ border-radius:3%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.headerCarte{
+
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.nomPokemon{
+    font-family: 'Miltonian Tattoo', serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin:8px;
+}
+
+.logotype{
+    height: 30px;
+}
+
+.mainImageCarte{
+    width: 350px;
+    height: auto;
+}
+
+.botCarte{
+    width: 90%;
+   text-align: center;
+   padding-bottom: 15px;
+}
+.titreStats{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.lignesdestats{
+    display: flex;
+   justify-content: space-around;
+}
+
+.bouton{
+   margin-bottom: 20px;
+   border-radius: 50%;
+   border: none;
+}
