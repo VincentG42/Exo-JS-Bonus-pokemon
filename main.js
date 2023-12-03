@@ -1,8 +1,12 @@
 
+let cartePokemon ="";
+// genere carte principale
 async function afficherPokemon(url) {
     const reponse = await fetch(url);
-    const cartePokemon = await reponse.json();
+     cartePokemon = await reponse.json();
     console.log(cartePokemon);
+        
+
 
     document.querySelector('.carte').innerHTML = 
                     `<div class="headerCarte">
@@ -35,17 +39,31 @@ async function afficherPokemon(url) {
                                 </div>
                             </div>
                 </div>
+             
                 `
+    return cartePokemon;
 }
 
-function entierAleatoire(max, min)
-{
+function entierAleatoire(max, min){
  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-document.querySelector('button').addEventListener('click', ()=>
+document.querySelector('#boutonAffichage').addEventListener('click', ()=>
  afficherPokemon(`https://tyradex.vercel.app/api/v1/pokemon/${entierAleatoire(1,1018)}`)
 );
+
+
+// capture cartes
+
+
+let PokemonCaptures= [];
+let divACapturer = document.querySelector('.carte');
+
+document.querySelector('#boutonCapture').addEventListener('click', ()=>{
+    PokemonCaptures.push(cartePokemon)
+console.log(PokemonCaptures);
+});
+
 
 
 

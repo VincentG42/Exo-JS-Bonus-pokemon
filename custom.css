@@ -5,6 +5,10 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
+main{
+    margin-bottom: 20px;
+}
 .carte{
  height: 600px;
  width: 400px;
@@ -59,4 +63,8 @@ body{
    margin-bottom: 20px;
    border-radius: 50%;
    border: none;
+}
+
+.minicartes-liste{
+    display: flex;
 }
